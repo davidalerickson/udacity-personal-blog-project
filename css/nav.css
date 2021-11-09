@@ -1,0 +1,44 @@
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0;
+  color: white;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.nav-menu-item {
+  position: relative;
+  text-align: center;
+}
+
+.nav-menu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-menu a:hover {
+  color: #fddb3a;
+}
+
+.nav-menu a:hover::after {
+  /* content: url(../img/gif/heart.gif); */
+  content: url(../img/svg/yellow-triangle.svg);
+  position: absolute;
+  display: block;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
