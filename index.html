@@ -5,27 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/1ebeb26fe3.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Document</title>
     <style></style>
   </head>
   <body>
     <main>
       <div class="container">
-        <nav class="nav-menu">
-          <div class="nav-menu-item">
-            <a href="#">Blog</a>
+        <div class="navbar">
+          <div class="home">
+            <a href="/">
+              <img
+                src="./img/svg/house-user.svg"
+                class="home-icon"
+                alt="Home Icon"
+              />
+            </a>
           </div>
-          <div class="nav-menu-item">
-            <a href="#">About</a>
+          <div>
+            <nav class="nav-menu">
+              <div class="nav-menu-item">
+                <a href="./blog.html">Blog</a>
+              </div>
+              <div class="nav-menu-item">
+                <a href="#">About</a>
+              </div>
+              <div class="nav-menu-item">
+                <a href="#">Contact</a>
+              </div>
+            </nav>
           </div>
-          <div class="nav-menu-item">
-            <a href="#">Contact</a>
-          </div>
-        </nav>
+          <div></div>
+        </div>
         <!-- hero-wrapper div allows filter: drop-shadow to set shadow on clip path -->
         <div class="hero-wrapper">
           <div class="hero">
@@ -76,8 +86,83 @@
             </div>
           </div>
         </div>
-        <section class="about">Section 1</section>
-        <div class="footer">Footer</div>
+
+        <section class="about">
+          <div class="about-grid">
+            <div class="about-main-content">
+              <article class="travel-quotes">
+                <figure class="quote">
+                  <blockquote class="quote__text">
+                    Great art arising from technology is only limited by
+                    imagination.
+                  </blockquote>
+                  <figcaption class="quote__author-box">
+                    <p class="quote__author-name">
+                      - Something that popped into my head
+                    </p>
+                  </figcaption>
+                </figure>
+              </article>
+            </div>
+            <div class="about-sidebar">
+              <div class="sidebar-card">
+                <div class="title-wrapper">
+                  <h4 class="title-text">About Me</h4>
+                  <div class="title-line"></div>
+                </div>
+                <img
+                  src="/img/AboutMe.jpg"
+                  class="about-image"
+                  alt="About David"
+                />
+                <p class="about-text">
+                  designer - developer - digital nomad passionate about digital
+                  art and design but also a bit of a geek
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div>
+            <ul class="footer-icons">
+              <li>
+                <a
+                  href="https://www.facebook.com/travelwithdavidandcarmela/?modal=admin_todo_tour"
+                >
+                  <div class="icon">
+                    <img
+                      src="./img/svg/facebook-square.svg"
+                      alt="Facebook Icon"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/go_go_bye_bye/">
+                  <div class="icon">
+                    <img
+                      src="./img/svg/instagram-square.svg"
+                      alt="Instagram Icon"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/gogobyebye1">
+                  <div class="icon">
+                    <img
+                      src="./img/svg/twitter-square.svg"
+                      alt="Twitter Icon"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <p>&copy;2021 GoGoByeBye and David Erickson. All rights reserved</p>
+          </div>
+        </footer>
       </div>
     </main>
   </body>

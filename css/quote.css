@@ -1,0 +1,44 @@
+.quote {
+  position: relative;
+  color: #333;
+  padding: 3rem;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
+
+.quote {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  z-index: 1;
+  position: relative;
+  /* //to allow z-index to work */
+  font-style: italic;
+}
+
+.quote__author-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quote__author-box {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.quote::before {
+  content: "\201C";
+  /* //In Gatsby need to escape backslash, in Svelte */
+  position: absolute;
+  top: -1.2rem;
+  left: -0.3rem;
+  font-size: 10rem;
+  line-height: 1;
+  font-family: sans-serif;
+  color: #00acee;
+  z-index: -1;
+}
