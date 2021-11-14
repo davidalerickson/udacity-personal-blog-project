@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
+  height: 7vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,8 +14,13 @@
   margin: 2rem;
 }
 .home a:hover::after {
-  content: "------------";
-  color: #fddb3a;
+  content: url(../img/svg/three-yellow-dots.svg);
+  position: absolute;
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  top: 4rem;
+  left: -0.5rem;
 }
 
 .home-icon {
@@ -52,10 +58,10 @@
 
 .nav-menu a:hover::after {
   /* content: url(../img/gif/heart.gif); */
-  content: url(../img/svg/yellow-triangle.svg);
+  content: url(../img/svg/three-yellow-dots.svg);
   position: absolute;
   display: block;
-  top: 2.5rem;
+  top: 1.5rem;
   left: 0;
   right: 0;
   margin-left: auto;

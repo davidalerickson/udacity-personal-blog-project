@@ -1,26 +1,19 @@
 .quote {
   position: relative;
+  font-size: 1.25rem;
   color: #333;
-  padding: 3rem;
+  font-style: italic;
   width: 90%;
-  height: 200px;
-  margin: 0 auto;
-  margin-top: 3rem;
+  height: 100%;
+  padding: 2rem;
+  margin: 3rem auto 1rem auto;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-}
-
-.quote {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
   z-index: 1;
-  position: relative;
-  /* //to allow z-index to work */
-  font-style: italic;
 }
 
 .quote__author-name {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -41,4 +34,27 @@
   font-family: sans-serif;
   color: #00acee;
   z-index: -1;
+}
+
+@media (min-width: 600px) {
+  .quote {
+    font-size: 2rem;
+    padding: 2.5rem;
+  }
+  .quote__author-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .quote {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quote {
+    font-size: 3rem;
+    padding: 3rem;
+  }
 }
