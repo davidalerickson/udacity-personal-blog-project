@@ -1,0 +1,71 @@
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 25px 0px rgb(255, 255, 255);
+}
+
+.card:active {
+  box-shadow: none;
+}
+
+.card-image {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+}
+
+.tag + .tag {
+  margin-left: 0.5em;
+}
+
+.tag-blue {
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #d1913c;
+  background: linear-gradient(to bottom, #ffd194, #d1913c);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}

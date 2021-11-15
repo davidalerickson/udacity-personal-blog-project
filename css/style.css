@@ -22,6 +22,7 @@ Order of attack: Base + Typography> General layout + Grid> Components
 
 @import url(./social-links.css);
 @import url(./quote.css);
+@import url(./cards.css);
 
 *,
 *::after,
@@ -53,7 +54,7 @@ body {
   }
 }
 .container {
-  width: 100vw;
+  width: 100%;
 }
 
 /* -----------Hero start Hero------------------ */
@@ -66,6 +67,7 @@ body {
   /* height: 1000px; */
   background-image: url(../img/bkg/about_bkg.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .about-grid {
@@ -128,6 +130,18 @@ body {
   margin-top: 2rem;
 }
 
+.abobe-callout {
+  position: absolute;
+  height: 4rem;
+  bottom: -5rem;
+  right: 3rem;
+}
+
+.adobe-icon {
+  display: inline-block;
+  height: 2.5rem;
+}
+
 @media (min-width: 330px) {
   .about-grid {
     grid-template-columns: 1fr 200px;
@@ -143,6 +157,13 @@ body {
   .title-text {
     font-size: 1.25rem;
   }
+  .abobe-callout {
+    right: 2rem;
+    bottom: -4rem;
+  }
+  .adobe-icon {
+    height: 3rem;
+  }
 }
 @media (min-width: 600px) {
   .about-grid {
@@ -150,6 +171,13 @@ body {
   }
 }
 /* -----------end About------------------ */
+.blog-preview {
+  padding-top: 3em;
+  background-image: url(/img/bkg/farzad-nazifi-p-xSl33Wxyc-unsplash.jpg);
+  background-size: cover;
+  /* height: 1000px; */
+}
+
 .footer {
   height: 9rem;
   text-align: center;
