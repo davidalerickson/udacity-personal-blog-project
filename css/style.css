@@ -1,20 +1,3 @@
-/*
-For latest screen size data - https://gs.statcounter.com/screen-resolution-stats
-0-600px             Phone
-600-900px           Tablet in Portrait Mode
-900-1200px          Tablet in Lanscape Mode
-1200-1800px         Where our normal styles apply - desktop first approach (max-width)
-1800px +            Big Desktop
-Breakpoint Argument Choices
-phone
-tab-port
-tab-land
-big-desk
-1em = 16px using ems per research https://zellwk.com/blog/media-query-units/
-
-Order of attack: Base + Typography> General layout + Grid> Components 
-
-*/
 @import url(./typography.css);
 @import url(./nav.css);
 @import url(./animation.css);

@@ -1,13 +1,19 @@
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
   grid-gap: 1rem;
   padding-bottom: 2rem;
 }
 
+.link-blog-entry {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card {
   background-color: white;
+  min-height: 375px;
   padding: 2rem;
   margin: 2rem;
   border-radius: 0.5rem;
