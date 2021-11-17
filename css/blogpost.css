@@ -5,6 +5,7 @@
 .blogpost {
   display: grid;
   grid-template-columns: 1fr;
+  font-size: 1.5rem;
 }
 
 .blogpost__title-wrapper {
@@ -12,7 +13,7 @@
 }
 
 .blog__archive-content {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -20,6 +21,7 @@
 }
 
 .blog__archive-title {
+  /* no styles for now */
 }
 
 .archive__bydate {
@@ -30,36 +32,72 @@
 }
 
 .archive__tags {
+  margin-top: 1rem;
 }
 
-.card {
+.blogpost__card {
   background-color: white;
   min-height: 375px;
   padding: 2rem;
-  margin: 2rem;
+  margin-top: 1rem;
   border-radius: 0.5rem;
-  box-shadow: none;
-  transition: all 0.3s;
 }
 
 .card-image {
-  max-width: 100%;
+  width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 5px;
+  padding-bottom: 2rem;
 }
 
-.card__body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.blogpost__body-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.blogpost__body-heading {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.blogpost__subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blogpost__card__body > h3 {
+  color: #d1913c;
+  font-style: oblique;
+}
+
+.blogpost__card__body > p {
+  font-size: 1.75rem;
+  /* text-indent: 2rem; */
+  margin-bottom: 1rem;
+}
+.blogpost__authorbox {
+  width: 100%;
+  font-style: oblique;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.blogpost__authorbox-image {
+  width: 7rem;
+  height: 7rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 50%;
 }
 
 .blogpost__tag {
   align-self: flex-start;
   padding: 0.25em 0.75em;
   border-radius: 1em;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .tag + .tag {
@@ -84,15 +122,20 @@
   color: #fafafa;
 }
 
-.card__body h4 {
-  font-size: 1.5rem;
+.blogpost__card__body h4 {
+  font-size: 2.5rem;
   text-transform: capitalize;
 }
 
 @media (min-width: 700px) {
   .blogpost {
+    font-size: 1.5rem;
     display: grid;
     grid-template-columns: 70% 30%;
+  }
+  .blogpost-card {
+    padding: 2rem;
+    margin: 2rem;
   }
   .blogpost__tag {
     font-size: 1.5rem;
