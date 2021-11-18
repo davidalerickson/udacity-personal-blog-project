@@ -173,3 +173,51 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
+
+.button {
+  font-family: inherit;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 3px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.button-blue {
+  background-color: #56ccf2;
+  border: 1px solid #2f80ed;
+}
+
+.button-blue:hover {
+  background-color: #2f80ed;
+}
+
+.button-red {
+  background-color: #ef473a;
+  border: 1px solid #cb2d3e;
+}
+
+.button-red:hover {
+  background-color: #cb2d3e;
+}
+
+.button-brown {
+  background-color: #ffd194;
+  border: 1px solid #d1913c;
+}
+
+.button-brown:hover {
+  background-color: #d1913c;
+}
+
+/* --------------------Utility Classes-------------------------- */
+
+.util-bold {
+  font-weight: bold;
+}
+
+.util-italic {
+  font-style: oblique;
+}
