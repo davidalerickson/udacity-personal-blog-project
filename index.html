@@ -25,10 +25,10 @@
               <a href="#blog">Blog</a>
             </div>
             <div class="nav-menu-item">
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </div>
             <div class="nav-menu-item">
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </div>
           </nav>
         </div>
@@ -68,7 +68,7 @@
       <!-- ------------------Start Hero------------------------ -->
       <section class="about">
         <div class="position">
-          <div class="abobe-callout">
+          <div class="abobe-callout" id="about">
             <img class="adobe-icon" src="./img/svg/Photoshop.svg" alt="">
             <img class="adobe-icon" src="./img/svg/Illustrator.svg" alt="">
             <img class="adobe-icon" src="./img/svg/Premiere Pro.svg" alt="">
@@ -167,27 +167,62 @@
 
       </section>
 
+<!-- ----------------------------Start Contact Section------------------------------- -->
+<section id="contact" class="contact">
+  <div class="contact-title">
+    <h1>Contact me for Web Dev and Design Services</h1>
+  </div>
+  <div class="container-form">
+    <form onSubmit="()=>alert('Not yet implemented')">
+   
+       <label for="fname">First Name</label>
+       <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+   
+       <label for="lname">Last Name</label>
+       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+   
+       <label for="email">email:</label>
+   
+   <input type="email" id="email"
+          pattern=".+@globex\.com" size="30" placeholder="Your email..">
+   
+   
+       <label for="subject">Subject</label>
+       <textarea id="subject" name="subject" placeholder="What would you like to do?" style="height:100px"></textarea>
+   
+       <input type="submit" class="button button-blue">
+     </form>
+  </div>
+</section>
+<!-- -----------------------end Contact Section--------------------- -->
       <footer class="footer">
         <div>
           <ul class="footer-icons">
             <li>
-              <a href="https://www.facebook.com/travelwithdavidandcarmela/?modal=admin_todo_tour">
+              <a href="#footer">
                 <div class="icon">
                   <img src="./img/svg/facebook-square.svg" alt="Facebook Icon" />
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/go_go_bye_bye/">
+              <a href="#footer">
                 <div class="icon">
                   <img src="./img/svg/instagram-square.svg" alt="Instagram Icon" />
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/gogobyebye1">
+              <a href="#footer">
                 <div class="icon">
                   <img src="./img/svg/twitter-square.svg" alt="Twitter Icon" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/davidalerickson/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BTA9rNjLrTVmempdajD5xZw%3D%3D">
+                <div class="icon">
+                  <img src="./img/svg/linkedin.svg" alt="LinkedIn Icon" />
                 </div>
               </a>
             </li>

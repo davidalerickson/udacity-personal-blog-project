@@ -1,0 +1,42 @@
+.contact {
+  background-image: linear-gradient(#d1903c81, #d1903c81),
+    url(../img/bkg/01.jpg);
+  background-position: top;
+  padding: 4rem;
+  outline: #ffd194 0.75rem solid;
+  outline-offset: -2rem;
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #795526;
+  text-align: center;
+}
+
+.container-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  /* color: white; */
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #795526;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 35%;
+}

@@ -7,6 +7,7 @@
 @import url(./quote.css);
 @import url(./cards.css);
 @import url(./blogpost.css);
+@import url(./contactform.css);
 
 *,
 *::after,
@@ -36,7 +37,7 @@ body {
   width: 100%;
 }
 
-/* -----------start About------------------ */
+/* -----------start About Section------------------ */
 .position {
   position: relative;
 }
@@ -168,7 +169,6 @@ body {
 .footer p {
   margin-bottom: 0;
   padding-bottom: 2rem;
-  /* padding-bottom: 1rem; */
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
